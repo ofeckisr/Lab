@@ -14,6 +14,7 @@ spec:
       labels:
 # set your lab user name
         app: nirshevah-hello-world
+
     spec:
       containers:
         - resources: {}
@@ -24,7 +25,7 @@ spec:
               protocol: TCP
           imagePullPolicy: IfNotPresent
 # update with the image you build in part 1
-          image: 'quay.io/nirshevah/hello-world:v1'
+          image: 'quay.io/nirshevah/hello-world:v2'
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
   strategy:
